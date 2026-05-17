@@ -1,0 +1,35 @@
+.navbarBelt{
+    background-color: #131921;
+    display: flex;
+    width: 100%;
+    height: 60px;
+    color: white;
+    box-sizing: border-box;
+}
+.leftNavBelt{
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+}
+.leftNavBeltLogo{
+    width: 110px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 8px;
+    cursor: pointer;
+    &:hover{
+        border: 1px solid;
+        border-radius: 3px;
+    }
+}
+
+.amazonLogoNavbar{
+    width: 97px;
+    height: 100%;
+}
+.navbar_inLogo{
+    margin-left: 2px;
+    font-weight: 400;
+}
