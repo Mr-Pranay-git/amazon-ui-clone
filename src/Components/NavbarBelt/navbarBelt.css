@@ -33,3 +33,42 @@
     margin-left: 2px;
     font-weight: 400;
 }
+
+/* --------------------------------------------------- */
+
+.navbarBeltLocation{
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    padding: 8px;
+    height: 30px;
+    cursor: pointer;
+    &:hover{
+    border-radius: 3px;
+    border: 1px solid;
+}
+}
+
+.navbarBeltLocationTop{
+    font-size: 12px;
+    color: #b9c3c6;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+}
+.navbarBeltLocationBottom{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 10px;
+}
+.navbarBeltSearchDiv{
+    display: flex;
+    padding: 8px;
+    background-color: #b9c3c6;
+    color: #9db1b7;
+    border-radius: 5px;
+}
+.navbarBeltSearchBox{
+    display: flex;
+    align-items: center;
+
+}
