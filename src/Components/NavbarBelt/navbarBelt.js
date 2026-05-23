@@ -5,6 +5,8 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import SearchIcon from '@mui/icons-material/Search';
+import India from '../../Assets/india.png';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const NavbarBelt = () => {
   const [DropDown, setDropDown] = useState(false)
@@ -39,7 +41,28 @@ const NavbarBelt = () => {
         </div>
       </div>
       <div className='rightSideNavbarBelt'>
-       
+        <div className='indianFlagCode'>
+          <img src={India} className='indiaFlag' />
+          <div className='indiaCodeNavbarBelt'>EN 
+            <ArrowDropDownOutlinedIcon sx={{fontsize:16,marginTop:1,marginLeft:-0.4}} className='indiaCodeNavbarBeltDrp' /></div>
+        </div>
+
+        <div className='helloSignInNavbaeBelt'>
+          <div className='helloTopNavbarBelt'>Hello, User</div>
+          <div className='indiaCodeNavbarBelt'>Accounts & Lists</div>
+        </div>
+
+        <div className='helloSignInNavbaeBelt'>
+          <div className='helloTopNavbarBelt'>Returns</div>
+          <div className='indiaCodeNavbarBelt'>&Orders</div>
+        </div>
+
+        <div className='helloSignInNavbaeBelt'>
+          <div className='cartItemNumberNavbarBelt'>2</div>
+          <div className='helloTopNavbarBelt'> <ShoppingCartOutlinedIcon/> <span className='cartTitle'>Cart</span> </div>
+        </div>
+        
+
       </div>
     </div> 
   )
