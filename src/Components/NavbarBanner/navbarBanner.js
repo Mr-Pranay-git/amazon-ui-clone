@@ -7,7 +7,7 @@ const NavbarBanner = () => {
     { "name": "Amazon miniT" },
     { "name": "Sell" },
     { "name": "Best Sellers" },
-    { "name": "Todays Deals" },
+    { "name": "Today's Deals" },
     { "name": "Mobiles" },
     { "name": "Electronics" },
     { "name": "Prime" },
