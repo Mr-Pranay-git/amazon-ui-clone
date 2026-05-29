@@ -1,0 +1,15 @@
+.homeBanner{
+    width: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.homeBannerimg{
+    height: 80vh;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgb(0,0,0,1), rgb(0,0,0,0));
+}
+.grayBackgroundHomeBanner{
+    background-color: rgb(238, 235, 235);
+    height: 80vh;
+}
