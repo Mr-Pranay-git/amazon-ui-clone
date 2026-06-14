@@ -3,12 +3,18 @@ import './App.css';
 import Navbar from './Components/navbar'
 import HomeScreen from './Screen/HomeScreen/homeScreen';
 import Footer from './Components/Footer/footer';
+import { Route, Routes } from 'react-router-dom';
+import Products from './Screen/HomeScreen/Products/products';
 
 function App() {
   return (
     <div className='App'> 
       <Navbar/>
-      <HomeScreen/>
+      <Routes>
+        <Route path="/" element={<HomeScreen/>} />
+        <Route path="/products" element={<Products/>} />
+      </Routes>
+      
       <Footer/>
     </div>
   );

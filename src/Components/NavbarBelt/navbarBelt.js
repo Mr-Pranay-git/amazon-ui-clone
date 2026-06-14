@@ -7,6 +7,7 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import SearchIcon from '@mui/icons-material/Search';
 import India from '../../Assets/india.png';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import { Link } from 'react-router-dom';
 
 const NavbarBelt = () => {
   const [DropDown, setDropDown] = useState(false)
@@ -14,7 +15,9 @@ const NavbarBelt = () => {
     <div className='navbarBelt'>
       <div className='leftNavBelt'>
         <div className="leftNavBeltLogo">
-          <img className='amazonLogoNavbar' src={amazonLogo} alt='amazonLogo' />
+          <Link to={'/'}>
+            <img className='amazonLogoNavbar' src={amazonLogo} alt='amazonLogo' />
+          </Link>
           <span className='navbar_inLogo'>.in</span>
         </div>
         <div className='navbarBeltLocation'>
@@ -35,7 +38,7 @@ const NavbarBelt = () => {
           </div>
           <input type='text' className='navbarBeltInputSearchBox' placeholder="Search Amazon.in" />
           <div className='searchIconNavbarBelt'>
-            <SearchIcon sx={{fontsize:"26px"}} className='searchIconNavbarBeltIcon' />
+            <SearchIcon sx={{ fontsize: "26px" }} className='searchIconNavbarBeltIcon' />
           </div>
 
         </div>
@@ -43,8 +46,8 @@ const NavbarBelt = () => {
       <div className='rightSideNavbarBelt'>
         <div className='indianFlagCode'>
           <img src={India} className='indiaFlag' />
-          <div className='indiaCodeNavbarBelt'>EN 
-            <ArrowDropDownOutlinedIcon sx={{fontsize:16,marginTop:1,marginLeft:-0.4}} className='indiaCodeNavbarBeltDrp' /></div>
+          <div className='indiaCodeNavbarBelt'>EN
+            <ArrowDropDownOutlinedIcon sx={{ fontsize: 16, marginTop: 1, marginLeft: -0.4 }} className='indiaCodeNavbarBeltDrp' /></div>
         </div>
 
         <div className='helloSignInNavbaeBelt'>
@@ -59,12 +62,12 @@ const NavbarBelt = () => {
 
         <div className='helloSignInNavbaeBelt'>
           <span className='cartItemNumberNavbarBelt'>2</span>
-          <div className='helloTopNavbarBelt'> <ShoppingCartOutlinedIcon/> <span className='cartTitle'>Cart</span> </div>
+          <div className='helloTopNavbarBelt'> <ShoppingCartOutlinedIcon /> <span className='cartTitle'>Cart</span> </div>
         </div>
-        
+
 
       </div>
-    </div> 
+    </div>
   )
 }
 
