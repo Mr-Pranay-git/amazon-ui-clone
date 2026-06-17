@@ -30,3 +30,39 @@
     text-decoration-thickness: 1px;
  }
  }
+
+ .productsPageMain{
+    display: flex;
+    padding: 16px 8px;
+ }
+ .productPageMainLeftCategory{
+    width: 14%;
+    border-right: 2px solid #ddd;
+    padding: 0 10px;
+ }
+ .productsPageMainLeftCategoryTitle{
+    font-size: 14px;
+    font-weight: 700;
+ }
+ .productsPageMainLeftCategoryContent{
+    margin-top: 10px;
+    font-size: 14px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+ }
+ .productsPageMainLeftCategoryContentSub{
+   font-weight: 600;
+ }
+ .ratingLeftBox{
+   display: flex;
+ }
+
+ .andUp{
+   font-size: 12px;
+   font-weight: 400;
+   margin-left: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
