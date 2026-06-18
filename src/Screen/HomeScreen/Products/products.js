@@ -84,7 +84,15 @@ const Products = () => {
           </div>
           
         </div>
+
+{/* products page right side content */}
+        <div className='productsPageMainRight'>
+          <div className='productsPageMainRightTopBanner'>
+            1-5 of 5 results for <span className='productsPageMainRightTopBannerSpan'>Macbooks</span>
+          </div>
+        </div>
       </div>
+
     </div>
   )
 }

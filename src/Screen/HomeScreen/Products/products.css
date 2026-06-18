@@ -66,3 +66,11 @@
    justify-content: center;
    align-items: center;
  }
+
+
+ /* products page right side content */
+
+.productsPageMainRightTopBanner{
+   width: 86%;
+   border: 1px solid black;
+}
