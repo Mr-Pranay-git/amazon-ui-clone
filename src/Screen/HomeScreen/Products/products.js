@@ -2,6 +2,7 @@ import React from 'react'
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 import './products.css'
+import { Superscript } from '@mui/icons-material';
 const Products = () => {
   return (
     <div className='productPage'>
@@ -104,6 +105,11 @@ const Products = () => {
                   <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />                                    
                   <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />                                    
                   <StarBorderOutlinedIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                </div>
+                <div className='priceProductDetailPage'>
+                  <sup><div className='currencyText'>₹</div></sup>
+                  <div className='price'>76,990</div>
+
                 </div>
               </div>
             </div>
