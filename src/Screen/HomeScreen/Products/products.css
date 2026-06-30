@@ -125,7 +125,30 @@
 .currencyText{
    font-size: 13px;
 }
-.price{
-   font-size: 25px;
-   font-weight: 700;
+.rateHomeDetail{
+   font-size: 28px;
+   font-weight: 500;
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+.addtobasketBtn{
+   background-color: #febd69;
+   width: fit-content;
+   font-size: 14px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.offproductPage{
+   color: #727171;
+   font-weight: 400;
+}
+.freeDeliveryHomepage{
+   font-weight: 400;
+   margin-top: 10px;
 }

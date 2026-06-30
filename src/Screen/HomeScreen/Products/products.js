@@ -3,6 +3,7 @@ import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 import './products.css'
 import { Superscript } from '@mui/icons-material';
+import productDetail from './products.json';
 const Products = () => {
   return (
     <div className='productPage'>
@@ -93,6 +94,12 @@ const Products = () => {
           </div>
 
           <div className='itemsImageProductPage'>
+
+            {
+              productDetail.product.map((item, index)=>{
+                
+              })
+            }
             <div className='itemsImageProductPageOne'>
               <div className='imgBlockitemsImageProductPageOne'>
                 <img src={"https://m.media-amazon.com/images/I/51brxTbVUoL._SY300_SX300_QL70_FMwebp_.jpg"} className='productImageProduct' />
@@ -107,12 +114,20 @@ const Products = () => {
                   <StarBorderOutlinedIcon sx={{ fontSize: "20px", color: "#febd69" }} />
                 </div>
                 <div className='priceProductDetailPage'>
-                  <sup><div className='currencyText'>₹</div></sup>
-                  <div className='price'>76,990</div>
+                  <div className='currencyText'>₹</div>
+                  <div className='rateHomeDetail'>
+                    <div className='rateHomeDetailPrice'>76,990</div>
+                    <div className='addtobasketBtn'>Add to Cart</div>
+                    
+                  </div>
 
                 </div>
+                <div className='offproductPage'>Upto 10% off on select cards</div>
+                <div className='freeDeliveryHomepage'>Free Delivery By Amazon</div>
               </div>
             </div>
+
+              
           </div>
 
         </div>
