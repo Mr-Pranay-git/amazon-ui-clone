@@ -5,6 +5,7 @@ import './products.css'
 import { Superscript } from '@mui/icons-material';
 import productDetail from './products.json';
 const Products = () => {
+
   return (
     <div className='productPage'>
       <div className='productTopBanner'>
@@ -96,8 +97,37 @@ const Products = () => {
           <div className='itemsImageProductPage'>
 
             {
-              productDetail.product.map((item, index)=>{
-                
+              productDetail.product.map((item, index) => {
+                // const {id, name, price, quantity, imageUrl} = productDetail.product[index]
+                const {id, name, price, quantity, imageUrl} = item
+                return (
+                  <div key={id} className='itemsImageProductPageOne'>
+                    <div className='imgBlockitemsImageProductPageOne'>
+                      <img src={imageUrl} className='productImageProduct' />
+                    </div>
+                    <div className="productNameProduc">
+                      <div>{name}</div>
+                      <div className='productNameProductRating'>
+                        <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                        <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                        <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                        <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                        <StarBorderOutlinedIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                      </div>
+                      <div className='priceProductDetailPage'>
+                        <div className='currencyText'>₹</div>
+                        <div className='rateHomeDetail'>
+                          <div className='rateHomeDetailPrice'>{price}</div>
+                          <div className='addtobasketBtn'>Add to Cart</div>
+
+                        </div>
+
+                      </div>
+                      <div className='offproductPage'>Upto 10% off on select cards</div>
+                      <div className='freeDeliveryHomepage'>Free Delivery By Amazon</div>
+                    </div>
+                  </div>
+                )
               })
             }
             <div className='itemsImageProductPageOne'>
@@ -107,10 +137,10 @@ const Products = () => {
               <div className="productNameProduc">
                 <div>{'Lenovo LOQ 2024 12th Gen Core i5-12450HX | NVIDIA RTX 3050 6GB (16GB RAM/512GB SSD/15.6" (39.6cm)/Windows 11/Office Home 2024/100% sRGB/3 Mon. Game Pass/Grey/2.4Kg), 83GS00LNIN Gaming Laptop'}</div>
                 <div className='productNameProductRating'>
-                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />          
-                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />                                    
-                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />                                    
-                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />                                    
+                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
+                  <StarRateIcon sx={{ fontSize: "20px", color: "#febd69" }} />
                   <StarBorderOutlinedIcon sx={{ fontSize: "20px", color: "#febd69" }} />
                 </div>
                 <div className='priceProductDetailPage'>
@@ -118,7 +148,7 @@ const Products = () => {
                   <div className='rateHomeDetail'>
                     <div className='rateHomeDetailPrice'>76,990</div>
                     <div className='addtobasketBtn'>Add to Cart</div>
-                    
+
                   </div>
 
                 </div>
@@ -127,7 +157,7 @@ const Products = () => {
               </div>
             </div>
 
-              
+
           </div>
 
         </div>
