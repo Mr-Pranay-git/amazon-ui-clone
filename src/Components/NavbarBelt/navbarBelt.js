@@ -60,10 +60,10 @@ const NavbarBelt = () => {
           <div className='indiaCodeNavbarBelt'>&Orders</div>
         </div>
 
-        <div className='helloSignInNavbaeBelt'>
+        <Link to={'/cart'} className='helloSignInNavbaeBelt'>
           <span className='cartItemNumberNavbarBelt'>2</span>
           <div className='helloTopNavbarBelt'> <ShoppingCartOutlinedIcon /> <span className='cartTitle'>Cart</span> </div>
-        </div>
+        </Link>
 
 
       </div>

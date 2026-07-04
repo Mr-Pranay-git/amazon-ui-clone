@@ -1,0 +1,25 @@
+.cart{
+    background-color: whitesmoke;
+    padding: 20px 18px 18px;
+    display: flex;
+    gap: 10px;
+    /* height: 100%;
+    width: 100%;
+    box-sizing: border-box; */
+}
+
+.topLeftCart{
+    padding: 20px 15px 15px;
+    box-sizing: border-box;
+    width: 77%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.topLeftCartTitle{
+    font-size: 25px;
+    font-weight: 500;
+}
+.desellectAllCart{
+    color: darkgreen;
+}
