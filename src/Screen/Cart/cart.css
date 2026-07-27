@@ -42,9 +42,17 @@
     display: flex;
     width: 80%;
 }
-
-.cartItemLeftBlockImg{
-    height: 20%;
-    width: auto;
+.cartItemLeftBlockImage{
+    width: 20%;
     flex-shrink: 0;
+}
+.cartItemLeftBlockImg{
+    width: 100%;
+}
+
+.cartItemLeftBlockDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 7px;
 }
