@@ -17,6 +17,10 @@ const Cart = () => {
                   </div>
                   <div className='cartItemLeftBlockDetails'>
                     <div className='cartItemProductName'>boAt Airdopes 141 Bluetooth TWS Earbuds with 42H Playtime,Low Latency Mode for Gaming. ENx Tech. IWP. IPX4 Water Resistanc..</div>
+                    <div className='instock'>In stock</div>
+                    <div className='elgFreeshp'>Elligible for FREE Shopping</div>
+                    <div className='amazonFullFilledImage'><img className='fullfillingImg' src='https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png' /></div>
+                    <div className='removeFromCart'>Remove From Basket</div>
                   </div>
 
                 </div>
