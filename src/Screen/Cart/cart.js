@@ -6,7 +6,7 @@ const Cart = () => {
     <div className='cart'>
         <div className='topLeftCart'>
             <div className='topLeftCartTitle'>Shopping Cart</div>
-            <div className='desellectAllCart'>Deselect all items</div>
+            <div className='deselectAllCart'>Deselect all items</div>
             <div className='cartPriceTextDivider'>Price</div>
 
             <div className='cartItemsDiv'>
@@ -22,15 +22,17 @@ const Cart = () => {
                     <div className='amazonFullFilledImage'><img className='fullfillingImg' src='https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png' /></div>
                     <div className='removeFromCart'>Remove From Basket</div>
                   </div>
-
                 </div>
+                  <div className='cartItemRightBlock'>
+                     Rs {1200}
+                  </div>
 
               </div>
             </div>
         </div>
 
         <div className='topRightCart'>
-
+                    
         </div>
       
     </div>

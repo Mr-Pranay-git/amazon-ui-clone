@@ -20,7 +20,7 @@
     font-size: 25px;
     font-weight: 500;
 }
-.desellectAllCart{
+.deselectAllCart{
     color: darkgreen;
 }
 .cartPriceTextDivider{
@@ -75,4 +75,9 @@
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
+}
+.cartItemRightBlock{
+    font-size: 18px;
+    font-weight: 600;
+    box-sizing: border-box;
 }
