@@ -32,7 +32,12 @@ const Cart = () => {
         </div>
 
         <div className='topRightCart'>
-                    
+          <div className='subTotalTitle'>Subtotal ({2} items): <span className='subTotalTitleSpan'>Rs {45000}</span></div>                    
+          <div className='giftAddto'>
+            <input type='checkbox'/> 
+            <div>this order contains a gift</div>
+          </div>
+          <div className='proceedToBuy'>Proceed To Buy</div>
         </div>
       
     </div>

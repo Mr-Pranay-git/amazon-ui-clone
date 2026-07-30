@@ -81,3 +81,34 @@
     font-weight: 600;
     box-sizing: border-box;
 }
+
+.topRightCart{
+    width: 23%;
+    padding: 20px 15px 15px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.subTotalTitle{
+    font-size: 18px;
+    font-weight: 500;
+}
+.subTotalTitleSpan{
+    font-weight: 700;
+}
+.giftAddto{
+    display: flex;
+    margin: 10px 0;
+}
+.proceedToBuy{
+    background-color: #febd69;
+    padding: 10px 15px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer ;
+}
