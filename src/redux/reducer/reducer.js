@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FROM_CART, UPDATE_CART_QUANTITY, REMOVE_FROM_CART, CLEAR, CLEAR_CART } from "../actionsType";
+import { ADD_TO_CART, REMOVE_FROM_CART, UPDATE_CART_QUANTITY, CLEAR, CLEAR_CART } from "../actionsType";
 
 const initialState = {
     items: []
@@ -27,8 +27,9 @@ const cartReducer = (state = initialState, action) => {
             return {
                 ...state,
                 items:[]
-            }
+            };
         default:
-                
+            return state;  
     }
 }
+export default cartReducer;

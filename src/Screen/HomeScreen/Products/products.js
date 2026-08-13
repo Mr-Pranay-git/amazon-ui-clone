@@ -4,6 +4,8 @@ import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 import './products.css'
 import { Superscript } from '@mui/icons-material';
 import productDetail from './products.json';
+import { useSelector, useDispatch } from 'react-redux';
+import { addTocart } from '../../../redux/actions/actions';
 const Products = () => {
 
   return (

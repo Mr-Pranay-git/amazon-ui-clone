@@ -8,9 +8,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import India from '../../Assets/india.png';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
+import {useSelector, useDispatch} from 'react-redux';
 
 const NavbarBelt = () => {
-  const [DropDown, setDropDown] = useState(false)
+  const cartItems = useSelector((state) => state.cart.items);
   return (
     <div className='navbarBelt'>
       <div className='leftNavBelt'>
@@ -61,7 +62,7 @@ const NavbarBelt = () => {
         </div>
 
         <Link to={'/cart'} className='helloSignInNavbaeBelt'>
-          <span className='cartItemNumberNavbarBelt'>2</span>
+          <span className='cartItemNumberNavbarBelt'>{cartItems.length}</span>
           <div className='helloTopNavbarBelt'> <ShoppingCartOutlinedIcon /> <span className='cartTitle'>Cart</span> </div>
         </Link>
 
