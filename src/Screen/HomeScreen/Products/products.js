@@ -8,6 +8,11 @@ import { useSelector, useDispatch } from 'react-redux';
 import { addTocart } from '../../../redux/actions/actions';
 const Products = () => {
 
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state)=> state.cart.items);
+  const handleAddToCart = (item)=>{
+    dispatch(addTocart(item));    
+  }
   return (
     <div className='productPage'>
       <div className='productTopBanner'>
@@ -120,7 +125,7 @@ const Products = () => {
                         <div className='currencyText'>₹</div>
                         <div className='rateHomeDetail'>
                           <div className='rateHomeDetailPrice'>{price}</div>
-                          <div className='addtobasketBtn'>Add to Cart</div>
+                          <div className='addtobasketBtn' onClick={()=>{handleAddToCart(item)}}>Add to Cart</div>
 
                         </div>
 
