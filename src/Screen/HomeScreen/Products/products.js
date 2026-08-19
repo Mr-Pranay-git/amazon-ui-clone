@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import StarRateIcon from '@mui/icons-material/StarRate';
 import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 import './products.css'
@@ -6,11 +6,14 @@ import { Superscript } from '@mui/icons-material';
 import productDetail from './products.json';
 import { useSelector, useDispatch } from 'react-redux';
 import { addTocart } from '../../../redux/actions/actions';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 const Products = () => {
 
   const dispatch = useDispatch();
   const cartItems = useSelector((state)=> state.cart.items);
   const handleAddToCart = (item)=>{
+    toast.success("Successfully Added in Cart")
     dispatch(addTocart(item));    
   }
   return (
@@ -170,7 +173,7 @@ const Products = () => {
         </div>
 
       </div>
-
+      <ToastContainer/>
     </div>
   )
 }
