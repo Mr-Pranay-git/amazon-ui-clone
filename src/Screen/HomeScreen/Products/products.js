@@ -7,7 +7,7 @@ import productDetail from './products.json';
 import { useSelector, useDispatch } from 'react-redux';
 import { addTocart } from '../../../redux/actions/actions';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'
+import 'react-toastify/dist/ReactToastify.css';
 const Products = () => {
 
   const dispatch = useDispatch();
@@ -173,7 +173,7 @@ const Products = () => {
         </div>
 
       </div>
-      <ToastContainer/>
+      <ToastContainer position='bottom-right'/>
     </div>
   )
 }
