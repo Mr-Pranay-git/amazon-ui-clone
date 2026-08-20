@@ -1,45 +1,58 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./cart.css"
-
+import { useSelector, useDispatch } from 'react-redux';
 const Cart = () => {
+  const [cartItem, setCartItem] = useState([])
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state)=> state.cart.items)
+
+  useEffect(() => {
+    setCartItem(cartItems)
+  }, [cartItems])
   return (
     <div className='cart'>
-        <div className='topLeftCart'>
-            <div className='topLeftCartTitle'>Shopping Cart</div>
-            <div className='deselectAllCart'>Deselect all items</div>
-            <div className='cartPriceTextDivider'>Price</div>
+      <div className='topLeftCart'>
+        <div className='topLeftCartTitle'>Shopping Cart</div>
+        <div className='deselectAllCart'>Deselect all items</div>
+        <div className='cartPriceTextDivider'>Price</div>
 
-            <div className='cartItemsDiv'>
-              <div className='cartItemBlock'>
-                <div className='cartItemLeftBlock'>
-                  <div className='cartItemLeftBlockImage'>
-                    <img className='cartItemLeftBlockImg' src='https://m.media-amazon.com/images/I/51QXIJUo+lL._AC_UF480,480_SR480,480_.jpg' />
+        <div className='cartItemsDiv'>
+          {
+            cartItems.map((item, ind) => {
+              return (
+                <div className='cartItemBlock'>
+                  <div className='cartItemLeftBlock'>
+                    <div className='cartItemLeftBlockImage'>
+                      <img className='cartItemLeftBlockImg' src={item.imageUrl} />
+                    </div>
+                    <div className='cartItemLeftBlockDetails'>
+                      <div className='cartItemProductName'>boAt Airdopes 141 Bluetooth TWS Earbuds with 42H Playtime,Low Latency Mode for Gaming. ENx Tech. IWP. IPX4 Water Resistanc..</div>
+                      <div className='instock'>In stock</div>
+                      <div className='elgFreeshp'>Elligible for FREE Shopping</div>
+                      <div className='amazonFullFilledImage'><img className='fullfillingImg' src='https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png' /></div>
+                      <div className='removeFromCart'>Remove From Basket</div>
+                    </div>
                   </div>
-                  <div className='cartItemLeftBlockDetails'>
-                    <div className='cartItemProductName'>boAt Airdopes 141 Bluetooth TWS Earbuds with 42H Playtime,Low Latency Mode for Gaming. ENx Tech. IWP. IPX4 Water Resistanc..</div>
-                    <div className='instock'>In stock</div>
-                    <div className='elgFreeshp'>Elligible for FREE Shopping</div>
-                    <div className='amazonFullFilledImage'><img className='fullfillingImg' src='https://m.media-amazon.com/images/G/31/marketing/fba/fba-badge_18px._CB485936079_.png' /></div>
-                    <div className='removeFromCart'>Remove From Basket</div>
-                  </div>
-                </div>
                   <div className='cartItemRightBlock'>
-                     Rs {1200}
+                    Rs {1200}
                   </div>
 
-              </div>
-            </div>
+                </div>
+              )
+            })
+          }
         </div>
+      </div>
 
-        <div className='topRightCart'>
-          <div className='subTotalTitle'>Subtotal ({2} items): <span className='subTotalTitleSpan'>Rs {45000}</span></div>                    
-          <div className='giftAddto'>
-            <input type='checkbox'/> 
-            <div>this order contains a gift</div>
-          </div>
-          <div className='proceedToBuy'>Proceed To Buy</div>
+      <div className='topRightCart'>
+        <div className='subTotalTitle'>Subtotal ({2} items): <span className='subTotalTitleSpan'>Rs {45000}</span></div>
+        <div className='giftAddto'>
+          <input type='checkbox' />
+          <div>this order contains a gift</div>
         </div>
-      
+        <div className='proceedToBuy'>Proceed To Buy</div>
+      </div>
+
     </div>
   )
 }
